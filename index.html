@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Loader</title>
+  <link rel="icon" href="img/6.svg" sizes="32x32">
+  <link rel="stylesheet" href="css/loadingScreen.css">
+</head>
+<body>
+
+  <div class="boxLoader">
+
+  <div class="loaderWrapper">
+    <svg class="loader" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet">
+      <defs>
+        <linearGradient id="grad" gradientUnits="userSpaceOnUse"
+          x1="0" y1="0" x2="100" y2="100">
+          <stop offset="0%" stop-color="#6a5cff"/>
+          <stop offset="50%" stop-color="#7b6bff"/>
+          <stop offset="100%" stop-color="#2ee6c9"/>
+        </linearGradient>
+      </defs>
+
+      <g id="segments"></g>
+    </svg>
+
+    <img src="../img/6.svg" class="loaderLogo" />
+  </div>
+
+  <span class="loading-text">
+    <span class="loading-main">Loading...</span>
+    <span id="message"></span>
+  </span>
+
+</div>
+
+<script src="js/loadingScreen.js" defer></script>
+
+</body>
+</html>

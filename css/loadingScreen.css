@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background: rgb(24, 34, 61);
+}
+
+.boxLoader {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.loaderWrapper {
+  width: 260px;
+  height: 260px;
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  width: 100%;
+  height: 100%;
+  display: block;
+  transform: scale(1.5);
+  margin: 0px;
+
+}
+
+.loaderLogo {
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  object-fit: contain;
+}
+.seg {
+  stroke: rgba(255, 255, 255, 0.15); /* gris */
+  stroke-width: 2;
+  stroke-linecap: square;
+  opacity: 0.4;
+  transition: opacity 0.2s ease;
+}
+
+.seg.on {
+  opacity: 1;
+}
+
+/* .loading-text {
+  margin-top: 10px;
+  color: white;
+  font-size: 12px;
+  opacity: 1;
+  transition: opacity 0.4s ease;
+} */
+
+.loading-text {
+  margin-top: 90px;
+  color: white;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+/* 🔥 Loading... (pulse) */
+.loading-main {
+  animation: pulse 1.2s ease-in-out infinite;
+  text-shadow: 0 0 6px rgba(255,255,255,0.3);
+
+}
+
+/* ✨ message (effet dynamique) */
+#message {
+  margin-left: 6px;
+  display: inline-block;
+
+  opacity: 1;
+  transform: translateY(0);
+
+  transition: opacity 0.4s ease, transform 0.4s ease, filter 0.4s ease;
+}
+
+/* animation keyframes loading */
+@keyframes pulse {
+  0%   { opacity: 0.4; }
+  50%  { opacity: 1; }
+  100% { opacity: 0.4; }
+}
+
+/* ✨ état caché (JS l’utilise) */
+.message-hide {
+  opacity: 0;
+  transform: translateY(6px);
+  filter: blur(2px);
+}
