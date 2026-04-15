@@ -36,53 +36,68 @@ cardBox1.addEventListener("mouseenter", () => {
   card1.style.transform = "scaleY(1)";
   headerText1.style.border = "unset";
   headerText1.textContent = hText[0];
+  headerText1.style.backgroundColor = "unset"
 });
 cardBox1.addEventListener("mouseleave", () => {
   card1.style.transform = "scaleY(0)";
   headerText1.style.border = "solid 1px #3f4761";
   headerText1.textContent = "";
+  headerText1.style.backgroundColor = "#3f4761"
 });
 
 cardBox2.addEventListener("mouseenter", () => {
   card2.style.transform = "scaleY(1)";
   headerText2.style.border = "unset";
   headerText2.textContent = hText[1];
+  headerText2.style.backgroundColor = "unset"
+
 });
 cardBox2.addEventListener("mouseleave", () => {
   card2.style.transform = "scaleY(0)";
   headerText2.style.border = "solid 1px #3f4761";
   headerText2.textContent = "";
+  headerText2.style.backgroundColor = "#3f4761"
+
 });
 
 cardBox3.addEventListener("mouseenter", () => {
   card3.style.transform = "scaleY(1)";
   headerText3.style.border = "unset";
   headerText3.textContent = hText[2];
+  headerText3.style.backgroundColor = "unset"
 });
 cardBox3.addEventListener("mouseleave", () => {
   card3.style.transform = "scaleY(0)";
   headerText3.style.border = "solid 1px #3f4761";
   headerText3.textContent = "";
+  headerText3.style.backgroundColor = "#3f4761"
+
 });
 
 cardBox4.addEventListener("mouseenter", () => {
   card4.style.transform = "scaleY(1)";
   headerText4.style.border = "unset";
   headerText4.textContent = hText[3];
+  headerText4.style.backgroundColor = "unset"
 });
 cardBox4.addEventListener("mouseleave", () => {
   card4.style.transform = "scaleY(0)";
   headerText4.style.border = "solid 1px #3f4761";
   headerText4.textContent = "";
+  headerText4.style.backgroundColor = "#3f4761"
+
 });
 
 cardBox5.addEventListener("mouseenter", () => {
   card5.style.transform = "scaleY(1)";
   headerText5.style.border = "unset";
   headerText5.textContent = hText[4];
+  headerText5.style.backgroundColor = "unset"
 });
 cardBox5.addEventListener("mouseleave", () => {
   card5.style.transform = "scaleY(0)";
   headerText5.style.border = "solid 1px #3f4761";
   headerText5.textContent = "";
+  headerText5.style.backgroundColor = "#3f4761"
+
 });
