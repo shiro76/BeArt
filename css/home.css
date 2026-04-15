@@ -51,9 +51,9 @@ body {
     border-bottom-right-radius: 0px;
     /* transition: height 0.4s ease; */
     transform: scaleY(0);
-    transform-origin: bottom;
+    /* transform-origin: bottom; */
+    transform-origin: center;
     transition: transform 1.0s ease;
-
 }
 
 .bottomC{
